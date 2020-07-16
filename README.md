@@ -1,2 +1,2 @@
 # yform_uikit
-UiKit Theme for Form
+UiKit Theme for YForm

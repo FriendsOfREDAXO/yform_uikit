@@ -1,0 +1,15 @@
+package: yform_uikit
+version: '0.0.1'
+author: 'Friends Of REDAXO'
+supportpage: https://github.com/FriendsOfREDAXO/yform_uikit
+
+requires:
+    packages:
+        yform: '^3.4.0'
+    redaxo: '^5.9.0'
+    php:
+        version: '^7.1' 
+
+conflicts:
+    packages:
+        yform: '<3.4.0'

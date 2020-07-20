@@ -15,7 +15,6 @@ if (count($labels) > 1) {
 foreach ($labels as $index => $label) {
     $classes = [];
     $classes[] = 'btn uk-button uk-button-primary uk-margin';
-    // $classes[] = 'btn-primary';
 
     if (isset($css_classes[$index]) && trim($css_classes[$index]) != '') {
         $classes[] = trim($css_classes[$index]);

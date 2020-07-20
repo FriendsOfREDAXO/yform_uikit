@@ -1,15 +1,16 @@
-<div class="alert alert-danger">
+<div class="uk-alert-danger" uk-alert>
 
 <?php
 if ($this->objparams['warning_messages'] || $this->objparams['unique_error']):
     if ($this->objparams['Error-occured']): ?>
-        <dl class="uk-alert-danger" uk-alert>
+
             <a class="uk-alert-close" uk-close></a>
-            <dt><?php echo $this->objparams['Error-occured'] ?></dt>
-            <dd>
+           <?php echo $this->objparams['Error-occured'] ?>
+
                 <ul>
     <?php else: ?>
-                <ul class="uk-list uk-list-striped">
+ <a class="uk-alert-close" uk-close></a>
+                <ul>
     <?php endif; ?>
                     <?php
 
@@ -32,8 +33,8 @@ if ($this->objparams['warning_messages'] || $this->objparams['unique_error']):
     ?>
                 </ul>
     <?php if ($this->objparams['Error-occured']): ?>
-            </dd>
-        </dl>
+
+
     <?php endif;
 endif;
 ?>

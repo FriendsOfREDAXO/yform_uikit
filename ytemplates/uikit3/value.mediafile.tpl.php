@@ -18,8 +18,19 @@ $class_group = trim('form-group ' . $this->getHTMLClass() . ' ' . $this->getWarn
 ?>
 
 <div class="<?= $class_group ?>">
-    <label for="<?= $this->getFieldId() ?>"><?= $this->getLabel() ?></label>
-    <input type="file" id="<?= $this->getFieldId() ?>" name="file_<?= md5($this->getFieldName('file')) ?>" accept="<?= $this->getElement("types") ?>" />
+
+ <label class="control-label" for="<?= $this->getFieldId() ?>">
+     <div class="uk-form-label "><?= $this->getLabel() ?></div>
+
+        <div uk-form-custom="target: true">
+             <a class="uk-form-icon uk-form-icon-flip" href="" uk-icon="icon: upload"></a>
+            <input type="file" id="<?= $this->getFieldId() ?>" name="file_<?= md5($this->getFieldName('file')) ?>" accept="<?= $this->getElement("types") ?>">
+            <input class="uk-input uk-form-width-medium" type="text" placeholder="Datei auswählen" disabled>
+              </div>
+        <button class="uk-button uk-button-default">Hochladen</button>
+
+ </label>
+
     <?php if ($this->getValue()): ?>
         <div class="help-block">
             <dl class="<?= $this->getHTMLClass() ?>-info">

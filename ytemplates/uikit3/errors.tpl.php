@@ -3,12 +3,13 @@
 <?php
 if ($this->objparams['warning_messages'] || $this->objparams['unique_error']):
     if ($this->objparams['Error-occured']): ?>
-        <dl class="dl-horizontal">
+        <dl class="uk-alert-danger" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
             <dt><?php echo $this->objparams['Error-occured'] ?></dt>
             <dd>
                 <ul>
     <?php else: ?>
-                <ul>
+                <ul class="uk-list uk-list-striped">
     <?php endif; ?>
                     <?php
 

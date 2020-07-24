@@ -19,7 +19,7 @@ $class_group = trim('form-group ' . $class . $this->getWarningClass());
 $class_label[] = 'control-label';
 
 $attributes = [];
-$attributes['class'] = 'form-control';
+$attributes['class'] = 'uk-select';
 $attributes['id'] = $this->getFieldId();
 if ($multiple) {
     $attributes['name'] = $this->getFieldName() . '[]';

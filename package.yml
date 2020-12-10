@@ -8,7 +8,7 @@ requires:
         yform: '^3.4.0'
     redaxo: '^5.9.0'
     php:
-        version: '^7.1' 
+        version: '>=7.1' 
 
 conflicts:
     packages:

@@ -1,4 +1,7 @@
 # yform_uikit
+
+⚠️ Die Funktionalität dieses Addons wurde in das Addon uikit_collection integriert und wird an dieser Stelle nicht länger gepflegt.
+
 UiKit Theme for YForm
 
 Usage: 
